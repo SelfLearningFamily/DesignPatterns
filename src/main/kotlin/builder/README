@@ -1,0 +1,21 @@
+Type: Creational design pattern:
+
+Core purpose : Creating complex objects step by step by creating simpler object. And final product would be the required complex object
+Pros :
+    reduces the number of parameters for constructor, greatly
+    reduces the change impact if there is some addition / changes in the properties of class
+    readibility improve (reduced line length etc)
+
+Cons :
+    increase the number of lines greatly due to the addition of extra classes and additional methods
+
+Components:
+    -Product : the complex object that need to be created via builder pattern
+    -builder : this is the soul of this design pattern. It includes all the steps required to create a product. These steps translated in abstract methods.
+    -concrete builder: There can be multiple number of concrete builders implementing the builder class/ interface. These classes contains the functionality of creating
+    a specific type of complex Product
+
+    -Director : this is the handler class to dictate the the builder classes. this class control the flow of program. It takes a type of concrete builder to build
+     the product.
+
+I have also labeled these these component in the code for better understanding

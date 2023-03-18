@@ -1,0 +1,5 @@
+type of of copies :
+    -shallow (default)
+    -deep
+    -lazy
+
